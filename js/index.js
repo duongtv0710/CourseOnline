@@ -49,7 +49,7 @@ function loadCourseData() {
             `;
         }
         document.getElementById('dCourse').innerHTML = content;
-        document.getElementById('popularCourse').innerHTML = content;
+        //document.getElementById('popularCourse').innerHTML = content;
     })
     .catch(function(err){
         let data = err.response.data;

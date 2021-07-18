@@ -35,7 +35,8 @@ function loadRoleData() {
             alert('Chưa đăng nhập!')
         }
         else if(data.status == 403){
-            alert('Không có quyền truy cập!')
+            alert('Không có quyền truy cập!');
+            document.location.href = "/index.html";
         }
     })
 }

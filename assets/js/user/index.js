@@ -40,7 +40,8 @@ function getInfo() {
             // window.location.href = "/login.html";
         }
         else if(data.status==403){
-            alert('not have access !')
+            alert('Không có quyền truy cập !')
+            document.location.href = "/index.html";
         }
     })
 }

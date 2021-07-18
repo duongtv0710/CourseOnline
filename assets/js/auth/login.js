@@ -15,7 +15,7 @@ function login() {
         data: userLogin
     })
     .then(function(response){
-        swal("Good job!", "You clicked the button!", "success").then(function(resp){
+        swal("Thành công !", "", "success").then(function(resp){
             // XÓA THÔNG TIN NGƯỜI DÙNG ĐÃ NHẬP TRÊN FORM
             document.getElementById("lgEmail").value = "";
             document.getElementById("lgPassword").value = "";
@@ -29,7 +29,7 @@ function login() {
     })
     .catch(function(err){
         if(err.response.status==400){
-            swal("Unsuccessfull !", "Account Invalid !", "error");
+            swal("Không thành công !", "", "error");
         }
     })
 }

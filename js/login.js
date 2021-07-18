@@ -20,7 +20,7 @@ function signUp() {
         data: userLogin
     })
     .then(function(response){
-        swal("Good job!", "You clicked the button!", "success").then(function(resp){
+        swal("Thành công !", "", "success").then(function(resp){
             // XÓA THÔNG TIN NGƯỜI DÙNG ĐÃ NHẬP TRÊN FORM
             document.getElementById("rgName").value = "";
             document.getElementById("rgEmail").value = "";

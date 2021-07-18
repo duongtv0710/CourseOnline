@@ -38,6 +38,7 @@ function loadCourseData() {
         }
         else if(data.status == 403){
             alert('Không có quyền truy cập!')
+            document.location.href = "/index.html";
         }
     })
 }
